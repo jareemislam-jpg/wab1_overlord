@@ -1,0 +1,233 @@
+
+/* General */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightgray;
+    color: black;
+    margin: 0;
+}
+
+/* Header */
+.main-header {
+    background-color: midnightblue;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.student-name {
+    margin-bottom: 5px;
+}
+
+.student-title {
+    color: lightblue;
+}
+
+/* Navigation */
+.main-nav {
+    background-color: midnightblue;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 10px;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.main-nav a:hover {
+    background-color: steelblue;
+}
+
+/* Main content */
+.main-content {
+    max-width: 1000px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.content-section {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid silver;
+    border-radius: 10px;
+}
+
+.content-section h2 {
+    color: midnightblue;
+    border-bottom: 2px solid steelblue;
+    padding-bottom: 8px;
+}
+
+/* About Me */
+.about-text {
+    font-size: 17px;
+}
+
+.profile-image {
+    display: block;
+    width: 250px;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border: 2px solid steelblue;
+    border-radius: 10px;
+}
+
+/* Tables */
+.info-table,
+.education-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.info-table th,
+.info-table td,
+.education-table th,
+.education-table td {
+    border: 1px solid silver;
+    padding: 8px;
+    text-align: left;
+}
+
+.info-table th,
+.education-table th {
+    background-color: midnightblue;
+    color: white;
+}
+
+.info-table tr:nth-child(even),
+.education-table tbody tr:nth-child(even) {
+    background-color: aliceblue;
+}
+
+.info-table tr:hover,
+.education-table tr:hover {
+    background-color: lightblue;
+}
+
+/* Activities */
+.activities-list li {
+    margin-bottom: 10px;
+}
+
+/* Projects */
+.project-item {
+    background-color: aliceblue;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-left: 4px solid steelblue;
+}
+
+.project-title {
+    color: steelblue;
+}
+
+/* Contact form */
+.contact-form {
+    max-width: 600px;
+}
+
+.form-input,
+.form-textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid silver;
+    border-radius: 5px;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    background-color: aliceblue;
+}
+
+.form-button {
+    padding: 10px 15px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-button {
+    background-color: midnightblue;
+    color: white;
+}
+
+.reset-button {
+    background-color: lightgray;
+}
+
+.submit-button:hover {
+    background-color: steelblue;
+}
+
+/* Footer */
+.main-footer {
+    background-color: midnightblue;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Mobile */
+@media screen and (max-width: 600px) {
+    .main-header {
+        padding: 15px;
+    }
+
+    .student-name {
+        font-size: 26px;
+    }
+
+    .nav-list {
+        gap: 5px;
+    }
+
+    .main-nav a {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .main-content {
+        padding: 8px;
+    }
+
+    .content-section {
+        padding: 12px;
+    }
+
+    .education-table {
+        display: block;
+        overflow-x: auto;
+    }
+
+    .education-table th,
+    .education-table td {
+        padding: 6px;
+        font-size: 12px;
+    }
+}
